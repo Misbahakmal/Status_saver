@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        card_view:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+<CheckBox
+    android:id="@+id/chk_selected"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:visibility="gone"
+
+
+    />
+            <ImageView
+                android:layout_below="@id/chk_selected"
+                android:id="@+id/mainImageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/white"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/playButtonImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_play_circle_filled_black_24dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mainImageView"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/r1"
+
+         >
+                <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profileImageView"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/user" />
+
+                <TextView
+                    android:layout_toRightOf="@id/profileImageView"
+                    android:id="@+id/profileUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Mike Jaakson"
+                    android:textColor="#212121"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    />
+     </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/r2"
+                    android:gravity="center"
+                    android:layout_below="@id/r1"
+                    >
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/repostID"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/forward" />
+
+                        <ImageView
+                            android:id="@+id/shareID"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/share"
+                            android:padding="10dp" />
+
+                        <ImageView
+                            android:id="@+id/deleteID"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/delete"
+                            android:padding="10dp" />
+
+                    </TableRow>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

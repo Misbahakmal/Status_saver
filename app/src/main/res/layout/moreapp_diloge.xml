@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical"
+    android:weightSum="6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/layou.t_title"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:background="#009688">
+
+            <TextView
+                android:id="@+id/save_title"
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:text="Do you want to open playstore?"
+                android:textColor="#ffffffff"
+                android:textSize="20.0dip"
+                />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="0.70000005dip"
+            android:background="#ff162749" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="#009688"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/layout_yesmore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1.5"
+                android:layout_centerInParent="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/cancelimage"
+                    android:layout_height="wrap_content"
+
+                    android:text="Yes"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#ffffff"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_nomore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_weight="1.5">
+                <TextView
+                    android:id="@+id/quitimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#ffffff"
+                    android:textSize="18.0dip"
+                    android:layout_marginLeft="15dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0.70000005dip"
+                android:layout_height="fill_parent"
+                android:background="#ff162749" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

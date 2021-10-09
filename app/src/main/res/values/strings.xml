@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">What\'s Status Saver</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Insufficient_app_permission">Insufficient app permission</string>
+    <string name="Saved_to_gallery">Saved to gallery!</string>
+    <string name="Failed_to_save_to_gallery">Failed to save to gallery</string>
+    <string name="Loading">Loading…</string>
+    <string name="About">About</string>
+    <string name="No_viewer_found">No viewer found</string>
+    <string name="bannerid">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="Inter_Add">ca-app-pub-3940256099942544/1033173712</string>
+    </resources>

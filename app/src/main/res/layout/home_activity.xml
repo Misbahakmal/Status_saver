@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+       android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:weightSum="10">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="5"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/downloadstatus"
+            android:layout_width="200dp"
+            android:layout_height="210dp"
+            android:background="@drawable/download_status" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:layout_weight="4"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/savedStatusimages"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/save_image" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/savedStatusvideo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/save_video" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/shaaare"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/shareapp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:gravity="bottom">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/bannerhome"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="bottom"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/bannerid">
+
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+    </LinearLayout>
