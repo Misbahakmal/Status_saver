@@ -52,11 +52,11 @@ public class HomeActivity extends BaseAppCompatActivity implements View.OnClickL
         if (!hasPermissions(this, PERMISSIONS)) {
             ActivityCompat.requestPermissions(this, PERMISSIONS, PERMISSION_ALL);
         }
-        download = (Button) findViewById(R.id.downloadstatus);
-        savedimages = (Button) findViewById(R.id.savedStatusimages);
-        savedVideos = (Button) findViewById(R.id.savedStatusvideo);
+        download = findViewById(R.id.downloadstatus);
+        savedimages = findViewById(R.id.savedStatusimages);
+        savedVideos = findViewById(R.id.savedStatusvideo);
 
-        Shareapp = (Button) findViewById(R.id.shaaare);
+        Shareapp = findViewById(R.id.shaaare);
         download.setOnClickListener(this);
         savedVideos.setOnClickListener(this);
 
@@ -104,36 +104,6 @@ public class HomeActivity extends BaseAppCompatActivity implements View.OnClickL
                                 + getPackageName());
                 startActivity(shareit);
                 break;
-
-//            case R.id.rate:
-//                Intent rateIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + getApplicationContext().getPackageName()));
-//                startActivity(rateIntent);
-//                break;
-//            case R.id.more:
-//                AlertDialog.Builder builder1 = new AlertDialog.Builder(HomeActivity.this);
-//                builder1.setMessage("Do you want to open playstore?");
-//                builder1.setCancelable(true);
-//
-//                builder1.setPositiveButton(
-//                        "Yes",
-//                        new DialogInterface.OnClickListener() {
-//                            public void onClick(DialogInterface dialog, int id) {
-//                                Intent MoreIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/developer?id=Apps+n+Games+Valley"));
-//                                startActivity(MoreIntent);
-//                            }
-//                        });
-//
-//                builder1.setNegativeButton(
-//                        "No",
-//                        new DialogInterface.OnClickListener() {
-//                            public void onClick(DialogInterface dialog, int id) {
-//                                dialog.cancel();
-//                            }
-//                        });
-//
-//                AlertDialog alert11 = builder1.create();
-//                alert11.show();
-//                break;
             default:
         }
     }
