@@ -58,8 +58,7 @@ public class Grid_ActivityVideos extends AppCompatActivity {
 		gridView.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> parent, View v,
 									int position, long id) {
-//				Toast.makeText(
-//						getApplicationContext();
+
 				String videoFilePath = FILE_PATH + fileList[position];
 				System.out.println("******************************videoFilePath****************" + videoFilePath);
 
@@ -138,17 +137,8 @@ public class Grid_ActivityVideos extends AppCompatActivity {
 
 				gridView = new View(context);
 
-
-
-				// get layout from gridlayout.xml
 				gridView = inflater.inflate(R.layout.gridlayout, null);
 
-
-
-				// set value into textview
-//				TextView textView = (TextView) gridView
-//						.findViewById(R.id.grid_item_label);
-//				textView.setText(fileList[position]);
 				System.out.println("value of fileList[position]" + fileList[0]);
 				// set image
 				ImageView imageThumbnail = (ImageView) gridView
