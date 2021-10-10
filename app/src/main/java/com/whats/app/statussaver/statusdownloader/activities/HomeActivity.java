@@ -16,7 +16,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
-
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
@@ -56,13 +55,11 @@ public class HomeActivity extends BaseAppCompatActivity implements View.OnClickL
         download = (Button) findViewById(R.id.downloadstatus);
         savedimages = (Button) findViewById(R.id.savedStatusimages);
         savedVideos = (Button) findViewById(R.id.savedStatusvideo);
-       //rateApp = (Button) findViewById(R.id.shaaare);
-//        moreApp = (Button) findViewById(R.id.more);
+
         Shareapp = (Button) findViewById(R.id.shaaare);
         download.setOnClickListener(this);
         savedVideos.setOnClickListener(this);
-        //rateApp.setOnClickListener(this);
-       // moreApp.setOnClickListener(this);
+
         Shareapp.setOnClickListener(this);
         savedimages.setOnClickListener(this);
         AdView mAdView = (AdView) findViewById(R.id.bannerhome);
