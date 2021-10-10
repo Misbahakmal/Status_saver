@@ -26,10 +26,6 @@ public class MainActivity extends BaseAppCompatActivity implements PermissionUti
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        AdView mAdView = (AdView) findViewById(R.id.bannermain);
-        AdRequest adRequest = new AdRequest.Builder()
-                .build();
-        mAdView.loadAd(adRequest);
         new PermissionUtils(this, this, this).begin();
     }
     @Override
