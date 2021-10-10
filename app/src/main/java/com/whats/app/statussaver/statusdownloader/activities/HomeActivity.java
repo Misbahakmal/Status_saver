@@ -104,6 +104,8 @@ public class HomeActivity extends BaseAppCompatActivity implements View.OnClickL
                                 + getPackageName());
                 startActivity(shareit);
                 break;
+
+
             default:
         }
     }
@@ -149,9 +151,9 @@ public class HomeActivity extends BaseAppCompatActivity implements View.OnClickL
                                 uriUrl);
                         startActivity(launchBrowser);
                     } catch (Exception e2) {
-                        Toast.makeText(getApplicationContext(),
+                        /*Toast.makeText(getApplicationContext(),
                                 "No Application Found to open link",
-                                Toast.LENGTH_SHORT).show();
+                                Toast.LENGTH_SHORT).show();*/
                     }
                 }
 
